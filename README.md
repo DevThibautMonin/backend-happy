@@ -14,6 +14,6 @@ Installl the project dependencies
 ```
 
 Create a .env file at the project root, this file will contain :
-- PORT=<your port>
-- MONGOOSE_URI=<your mongo db connection string>
-- API_VERSION=<your api version>
+- PORT=```<your port>```
+- MONGOOSE_URI=```<your mongo db connection string>```
+- API_VERSION=```<your api version>```
