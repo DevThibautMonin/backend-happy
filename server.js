@@ -1,8 +1,8 @@
 const express = require('express')
-const connectDB = require('./config/db')
+const connectDB = require('./src/config/db')
 const app = express()
 const dotenv = require('dotenv').config()
-const teamRouter = require('./routes/team/team.routes')
+const teamRouter = require('./src/routes/team/team.routes')
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
