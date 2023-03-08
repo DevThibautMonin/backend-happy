@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: false }))
 
 connectDB()
 
-app.use('/team', teamRouter)
+app.use(`/api/v${process.env.API_VERSION}/team`, teamRouter)
 
 app.listen(process.env.PORT, () => {
   console.log(`Server started at port ${process.env.PORT}`)
