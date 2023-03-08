@@ -1,6 +1,6 @@
 const express = require('express')
 const projectRouter = express.Router()
-const { createProject, getProjects, updateProject, deleteProject } = require('../../controllers/project.controller')
+const { createProject, getProjects, updateProject, deleteProject } = require('../controllers/project.controller')
 
 projectRouter.post('/', createProject)
 projectRouter.get('/', getProjects)
