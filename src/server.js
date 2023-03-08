@@ -12,5 +12,5 @@ connectDB()
 app.use(`/api/v${process.env.API_VERSION}/team`, teamRouter)
 
 app.listen(process.env.PORT, () => {
-  console.log(`Server started at port ${process.env.PORT}`)
+  console.log(`Server started on port ${process.env.PORT}`)
 })
