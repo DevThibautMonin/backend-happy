@@ -1,9 +1,10 @@
-const express = require('express')
-const connectDB = require('./config/db')
+import express from 'express'
+import connectDB from './config/db'
 const app = express()
-const dotenv = require('dotenv').config()
-const projectRouter = require('./routes/project.routes')
+import dotenv from 'dotenv'
+import projectRouter from './routes/project.routes'
 
+dotenv.config()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
